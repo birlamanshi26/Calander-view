@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# 📅 Calendar View Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive and fully type-safe **React + TypeScript** calendar component with **Month & Week views**, **event CRUD (Create, Read, Update, Delete)**, and seamless **Storybook documentation** support.  
+Built for scalability, accessibility, and modern UI workflows.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Links
 
-## React Compiler
+🔗 **Storybook Demo:** [https://callender-view-project.vercel.app](https://callender-view-project.vercel.app)  
+🎯 **Live App:** [https://callender-view.vercel.app](https://callender-view.vercel.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> *Explore all components live — month & week views, event modals, theme switcher, and tooltips.*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+✅ **Month & Week Views** – switch seamlessly between monthly and weekly layouts.  
+✅ **Event CRUD** – add, edit, or delete events dynamically.  
+✅ **Tooltip Support** – hover for event details and descriptions.  
+✅ **Responsive Design** – optimized for all screen sizes.  
+✅ **Dark / Light Mode** – built-in theme toggle support.  
+✅ **Fully Typed** – powered by TypeScript for safety and scalability.  
+✅ **Storybook Integration** – isolated UI testing & documentation.  
+✅ **Keyboard Accessible** – accessible navigation and ARIA labels.  
+✅ **Reusable Components** – modular design for easy integration.  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Category | Technologies Used |
+|-----------|------------------|
+| **Frontend Framework** | [React 18](https://react.dev/) |
+| **Language** | [TypeScript](https://www.typescriptlang.org/) |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) |
+| **Component Documentation** | [Storybook](https://storybook.js.org/) |
+| **Build Tool** | [Vite](https://vitejs.dev/) |
+| **UI Utilities** | Custom hooks, Tooltip, Calendar utilities |
+| **Deployment** | [Vercel](https://vercel.com/) |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Installation & Setup
+
+```bash
+# 1️⃣ Clone this repository
+git clone https://github.com/yourusername/calendar-view.git
+
+# 2️⃣ Navigate into the project
+cd calendar-view
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the Storybook documentation
+npm run storybook
+
+# 5️⃣ Build Storybook for deployment
+npm run build-storybook
